@@ -4,7 +4,7 @@
 
 :root {
     --diamond-size: 100px;
-    --circle-size: 80px;
+    --circle-size: 60px;
 }
 
 
@@ -17,7 +17,8 @@ body, html {
 }
 
 .shape, .side-panel, .top-bar, .room, .diamond, .bar, .circle, .side-panel {
-    border: 2px solid black
+    border: 5px solid black;
+    transition: all 0.5s ease-in-out;
 }
 
 .top-bar{
@@ -41,8 +42,8 @@ body, html {
     transform: rotate(45deg);
 }
 
-.d1 {top: 5%; left: 15%;}
-.d2 {top: 25%; left: 5%;}
+.d1 {top: 5%; left: 20%;}
+.d2 {top: 17%; left: 5%;}
 
 .bar{
     position:absolute;
@@ -79,4 +80,25 @@ body, html {
     font-family: sans-serif;
     font-weight: bold;
     font-size: 24px;
+}
+
+
+/* Resolutions */
+
+@media (max-width: 582px) {
+    .side-panel {
+        background-color: #0000ff;
+        position: absolute;
+        bottom: 2%;
+        right: auto;
+        left: 5%;
+        top: auto;
+    }
+    .bar  { left: 5%; }
+    .b1   { bottom: 60%; }
+    .b2   { bottom: 55%; }
+    .circle {
+        bottom: 55%;
+        left: 35%;
+    }
 }
