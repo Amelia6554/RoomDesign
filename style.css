@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --diamond-size: 100px;
+    --circle-size: 80px;
+}
+
 
 body, html {
   margin: 0;
@@ -11,8 +16,8 @@ body, html {
   overflow: hidden;
 }
 
-.shape, .side-panel, .top-bar, .room {
-    border: 2px solid black;
+.shape, .side-panel, .top-bar, .room, .diamond, .bar, .circle, .side-panel {
+    border: 2px solid black
 }
 
 .top-bar{
@@ -27,3 +32,51 @@ body, html {
     width: 100%;
 }
 
+/* Shapes */
+.diamond{
+    position: absolute;
+    width: var(--diamond-size);
+    height: var(--diamond-size);
+    background-color: #ff0000;
+    transform: rotate(45deg);
+}
+
+.d1 {top: 5%; left: 15%;}
+.d2 {top: 25%; left: 5%;}
+
+.bar{
+    position:absolute;
+    width: 100px;
+    height: 12px;
+    background-color: #0000ff;
+    left: 5%;
+}
+
+.b1 {bottom: 30%}
+.b2 {bottom: 20%}
+
+.circle{
+    position: absolute;
+    width:  var(--circle-size);
+    height: var(--circle-size);
+    background-color: #008080;
+    border-radius: 50%;
+    bottom: 20%;
+    left: 35%;
+}
+
+.side-panel {
+    position: absolute;
+    right: 5%;     
+    top: 10%;       
+    height: 400px;    
+    width: 200px;
+    background-color: #CC3333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
