@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.shape, .side-panel, .top-bar, .room {
+    border: 2px solid black;
+}
+
+.top-bar{
+    height: 10%;
+    background-color: #808000;
+}
+
+.room{
+    position: relative;
+    height: 90%;
+    background-color: #008000;
+    width: 100%;
+}
+
