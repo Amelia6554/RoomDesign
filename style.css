@@ -16,7 +16,7 @@ body, html {
   overflow: hidden;
 }
 
-.shape, .side-panel, .top-bar, .room, .diamond, .bar, .circle, .side-panel {
+.shape, .rectangle, .top-bar, .room, .diamond, .bar, .circle {
     border: 5px solid black;
     transition: all 0.5s ease-in-out;
 }
@@ -53,8 +53,8 @@ body, html {
     left: 5%;
 }
 
-.b1 {bottom: 30%}
-.b2 {bottom: 20%}
+.b1 {top: 40%}
+.b2 {top: 45%}
 
 .circle{
     position: absolute;
@@ -62,11 +62,11 @@ body, html {
     height: var(--circle-size);
     background-color: #008080;
     border-radius: 50%;
-    bottom: 20%;
-    left: 35%;
+    top: 40%;
+    left: 30%;
 }
 
-.side-panel {
+.rectangle {
     position: absolute;
     right: 5%;     
     top: 10%;       
@@ -86,19 +86,26 @@ body, html {
 /* Resolutions */
 
 @media (max-width: 582px) {
-    .side-panel {
+    .rectangle {
         background-color: #0000ff;
-        position: absolute;
         bottom: 2%;
-        right: auto;
         left: 5%;
         top: auto;
     }
-    .bar  { left: 5%; }
-    .b1   { bottom: 60%; }
-    .b2   { bottom: 55%; }
+}
+
+@media (min-width: 901px) {
+    .rectangle {
+        background-color: #ffffff;
+    }
+    .bar { 
+        left: 45%;
+    }
+    .b1  { top: 20%; }
+    .b2  { top: 25%; }
+    
     .circle {
-        bottom: 55%;
-        left: 35%;
+        top: 20%;
+        left: 60%;
     }
 }
