@@ -16,7 +16,7 @@ body, html {
   overflow: hidden;
 }
 
-.shape, .rectangle, .top-bar, .room, .diamond, .bar, .circle {
+.shape, .rectangle, .top-bar, .room {
     border: 5px solid black;
     transition: all 0.5s ease-in-out;
 }
@@ -91,6 +91,7 @@ body, html {
         bottom: 2%;
         left: 5%;
         top: auto;
+        right: auto;
     }
 }
 
